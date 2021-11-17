@@ -1,0 +1,18 @@
+.section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+  position: relative;
+  /* place-content: center; */
+  background-color: #494848;
+  width: 100vw;
+  border-bottom: 2px solid #fff;
+}
+
+@media (min-width: 768px){
+  .section{
+    padding: 5rem;
+  }
+}
+

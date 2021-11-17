@@ -1,0 +1,32 @@
+// .technology > svg {
+//   width: 5rem;
+//   height: 5rem;
+// }
+
+.technology{
+  background-color: #494848;
+  margin: auto;
+  gap: 1rem;
+  // align-content: center;
+  justify-content: center;
+  width: 100%;
+    h1{
+      font-size: 2rem;
+      color: #fff;
+    }
+}
+
+@media (min-width: 768px){
+  .technology{
+    width: 70%;
+  
+    svg:hover{
+      opacity: .5;
+    }
+
+    h1{
+      
+    }
+  }
+  
+}

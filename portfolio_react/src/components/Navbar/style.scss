@@ -1,0 +1,65 @@
+
+/**********************************/
+/*********** Nav Bar CSS **********/
+/**********************************/
+.navbar {
+  position: relative;
+  transition: .5s;
+  z-index: 999;
+}
+
+// .container-xl{
+//   display:flex;
+//   width: 100%;
+//   justify-content: space-between; 
+// }
+// .navbar.nav-sticky {
+//   position: fixed;
+//   top: 0;
+//   width: 100%;
+//   box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+// }
+
+.navbar-brand, .nav-item{
+  text-shadow: 1px 1px 1px black;
+}
+.navbar .navbar-brand {
+  margin: 0;
+  font-size: 25px;
+  line-height: 0px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  transition: .5s;
+}
+
+// .navbar .navbar-brand img {
+//   max-width: 100%;
+//   max-height: 40px;
+// }
+
+// .navbar .dropdown-menu {
+//   margin-top: 0;
+//   border: 0;
+//   border-radius: 0;
+//   background: #f8f9fa;
+// }
+
+@media (min-width: 992px) {
+  .navbar {
+      position: absolute;
+      width: 100%;
+      padding: 30px 60px;
+      background: transparent !important;
+      border-bottom: 1px dashed rgba(256, 256, 256, .2);
+      z-index: 9;
+  }
+}
+
+@media (max-width: 991.98px) {   
+  .navbar {
+      padding: 15px;
+      background: #3f3636 !important;
+  }
+
+}
+  

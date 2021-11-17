@@ -1,0 +1,4 @@
+const aboutMe = "Hello! I'm Marcelo Nader, a passionate software developer student. I'm currently studying the Certified Tech Developer, which is a complete course, thought and designed by Mercado Livre e Globant together with Digital House, where I'm having the opportunity to learn the most sought after languages ​​in Programming, technical knowledge and a series of skills fundamental to insert myself in the technology market."
+
+
+// "Atualmente estou cursando o Certified Tech Developer, que é um curso completo, pensado e desenhado pelo Mercado Livre e Globant em conjunto com a Digital House, onde estou tendo a oportunidade de aprender as linguagens mais procuradas em Programação, conhecimentos técnicos e uma série de habilidades fundamentais para me inserir no mercado de tecnologia."
