@@ -11,7 +11,6 @@
   position: relative;
   height: 100%;
 
-
   .col-left-left-content{
     padding: 3rem 0;
     display: flex;
@@ -38,9 +37,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
+
     height: 450vh;
     width: 0%;
     position: relative;
+    
   }
 
   @media(max-width: 768px){
@@ -60,9 +61,11 @@
 
     .col-right-left-content{
       width: 50vw;
+      transform: scale(1.02);
     }
     .col-left-left-content{
       width: 50vw;
+      
     }
   
   }
