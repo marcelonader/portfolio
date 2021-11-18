@@ -11,15 +11,15 @@ import Section from './components/Section';
 import SectionTwoColumnsRightContent from './components/SectionTwoColumnsRightContent';
 import SectionTwoColumnsLeftContent from './components/SectionTwoColumnsLeftContent';
 // import TitleTyping from "./components/TitleTyping"
-import projectMinions from "./imgs/project-minions.png";
-import projectToDoList from "./imgs/project-to-do-list.png";
-import projectPetinder from "./imgs/project-petinder.png";
-import projectCamaraRoll from "./imgs/project-camara-roll.png";
-import projectMemoryGame from "./imgs/project-memory-game.png";
-import projectCalculadora from "./imgs/project-calculadora.png";
-import projectDevDicas from "./imgs/project-dev-dicas.png";
-import projectTabelaClassificacao from "./imgs/project-tabela-classificacao.png";
-import projectSwitchBtn from "./imgs/project-switch-btn.png";
+// import projectMinions from "./imgs/project-minions.png";
+// import projectToDoList from "./imgs/project-to-do-list.png";
+// import projectPetinder from "./imgs/project-petinder.png";
+// import projectCamaraRoll from "./imgs/project-camara-roll.png";
+// import projectMemoryGame from "./imgs/project-memory-game.png";
+// import projectCalculadora from "./imgs/project-calculadora.png";
+// import projectDevDicas from "./imgs/project-dev-dicas.png";
+// import projectTabelaClassificacao from "./imgs/project-tabela-classificacao.png";
+// import projectSwitchBtn from "./imgs/project-switch-btn.png";
 import Card from './components/Card';
 import Technology from './components/Technologies';
 import TextAbout from './components/TextAbout';
@@ -28,6 +28,8 @@ import imgPerfilPretoEBranco from "./imgs/perfil1_edited_edited_edited.png"
 import Paragrafo from "./components/Paragrafo";
 import ParagrafoFooter from "./components/ParagrafoFooter"
 import ImgSection from "./components/ImgSection"
+import { projects } from './data/projects';
+import { aboutMe } from './data/about-me';
 
 const App = () => {
 
@@ -59,79 +61,49 @@ const App = () => {
             id='home' 
             imageBanner={`url(${bannerBackground3})`}
             >
-            
-            {/* <TitleTyping arrMessages={["Web Developer", "FullStack Developer"]}/> */}
         </Banner>
-        <Hero img={imgPerfilPretoEBranco}>
-            <TitleTyping arrMessages={["FRONTEND DEVELOPER", "BACKEND DEVELOPER"]}/>
+        <Hero 
+          img={imgPerfilPretoEBranco}>
+            <TitleTyping 
+              arrMessages={["FRONTEND DEVELOPER", "BACKEND DEVELOPER"]}/>
         </Hero>
-        <SectionTwoColumnsRightContent id="about">
-          <TextAbout textTitle="A passionate software developer student." textContent="I'm currently studying the Certified Tech Developer, which is a complete course, thought and designed by Mercado Livre and Globant together with Digital House, where I'm having the opportunity to learn the most sought after languages ​​in Programming, technical knowledge and a series of skills fundamental to insert myself in the technology market."/>
-          
-          <TextAbout textTitle="Lawyer in career transition to the technology area." textContent="I'm dedicating myself to becoming a great software developer soon."/>
-        {/* </SectionTwoColumnsRightContent>
-
-        <SectionTwoColumnsRightContent  id="about"> */}
-          <TextAbout textTitle="I am a" textContent="Musician in his spare time. Financial Market Enthusiast. Podcasts and eletronic games lover. Passionate about learning and working as a team."/>
-
-          <TextAbout textTitle="I love to ask logical challenges" textContent="I'm always exercising my programming logic on sites like codewars.com. I really love solving challenges involving logical reasoning."/>
-
-          <TextAbout textTitle="I love new experiences and to share and teach what I know." textContent="I trust in the value of each new professional experience and each new challenge, always aiming at respect for people and efficiency in results."/>
+        <SectionTwoColumnsRightContent 
+          id="about">
+          {aboutMe.map(({title, content}) => <TextAbout textTitle={title} textContent={content}/>
+          )}
         </SectionTwoColumnsRightContent>
 
         <Section>
           <Technology></Technology>
         </Section>
 
-        <SectionTwoColumnsLeftContent classes="row" id="projects">
-          <Card classes="col-6" img={projectMinions} title="Minions" link="https://projeto-minions.vercel.app/"/>
-          <Card classes="col-6" img={projectMemoryGame} title="Memory Game" link="checkpoint-01-fe-ii.github.io/form/"/>
-
-        {/* </SectionTwoColumnsLeftContent>
-        <SectionTwoColumnsLeftContent id="projects"> */}
-          <Card classes="col-6" img={projectCamaraRoll} title="Camara Roll" link="https://ffsf-filho.github.io/squad12/"/>
-          <Card classes="col-6" img={projectPetinder} title="Petinder" link="https://projetofinalfrontend.github.io/projetoFinal/"/>
-        {/* </SectionTwoColumnsLeftContent>
-        <SectionTwoColumnsLeftContent id="projects"> */}
-          <Card img={projectToDoList} title="ToDo List" link="https://projetofrontii-to-do.github.io/To-do/lista-tarefas.html"/>
-          <Card img={projectSwitchBtn} title="Switch Button" link="https://marcelonader.github.io/switch-btn/"/>
-        {/* </SectionTwoColumnsLeftContent>
-        <SectionTwoColumnsLeftContent id="projects"> */}
-          <Card img={projectCalculadora} title="Calculadora" link=" https://marcelonader.github.io/calculadora/"/>
-          <Card img={projectDevDicas} title="Dev dicas" link="https://marcelonader.github.io/frontend1-projeto-01/"/>
-        {/* </SectionTwoColumnsLeftContent>
-        <SectionTwoColumnsLeftContent styles={{"justify-content": "flex-start"}} id="projects"> */}
-          <Card img={projectTabelaClassificacao} title="Tabela de Classificação" link="https://marcelonader.github.io/tabela-de-classificacao/"/>  
+        <SectionTwoColumnsLeftContent 
+          classes="row" id="projects">
+          {projects.map(({img, title, link}) => <Card classes="col-6" img={img} title={title} link={link}/>)}
         </SectionTwoColumnsLeftContent>
-        
-
-
-
-
-      <Section 
-      id='section3' 
-      styles={{
-        transform: 'scale(1.1)', 
-        height: '80vh', 
-        'max-width': '100vw'
-        }} 
-      >
-      
-      <Paragrafo 
-        styles={{
-          color: '#fff', 
-          'font-size': 'clamp(1rem, 1vw, 2rem)', 'text-align': 'center', 
-          'text-shadow': '1px 1px 2px black'
-        }} 
-        content={"Site Desenvolvido por Marcelo Massayuki Nader."}
-      />
-      <ParagrafoFooter 
-        styles={{
-          color: '#fff', 
-          'font-size': 'clamp(.8rem, 1vw, 1.8rem)', 'text-align': 'center'
-        }}
-      />
-    </Section>
+        <Section 
+          id='section3' 
+          styles={{
+            transform: 'scale(1.1)', 
+            height: '80vh', 
+            'max-width': '100vw'
+            }} 
+        >
+          <Paragrafo 
+            styles={{
+              color: '#fff', 
+              'font-size': 'clamp(1rem, 1vw, 2rem)', 'text-align': 'center', 
+              'text-shadow': '1px 1px 2px black'
+            }} 
+            content={"Site Desenvolvido por Marcelo Massayuki Nader."}
+          />
+          <ParagrafoFooter 
+            styles={{
+              color: '#fff', 
+              'font-size': 'clamp(.8rem, 1vw, 1.8rem)', 'text-align': 'center'
+            }}
+          />
+        </Section>
 
           
             </>
