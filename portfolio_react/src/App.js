@@ -36,7 +36,7 @@ const App = () => (
     </Hero>
     <SectionTwoColumnsRightContent 
       id="about">
-      {aboutMe.map(({title, content}) => <TextAbout textTitle={title} textContent={content}/>
+      {aboutMe.map(({title, content}, i) => <TextAbout key={i} textTitle={title} textContent={content}/>
       )}
     </SectionTwoColumnsRightContent>
 
@@ -46,7 +46,7 @@ const App = () => (
 
     <SectionTwoColumnsLeftContent 
       classes="row" id="projects">
-      {projects.map(({img, title, link}) => <Card classes="col-6" img={img} title={title} link={link}/>)}
+      {projects.map(({img, title, link}, i) => <Card key={i} classes="col-6" img={img} title={title} link={link}/>)}
     </SectionTwoColumnsLeftContent>
     <Footer 
       id='section3' 
