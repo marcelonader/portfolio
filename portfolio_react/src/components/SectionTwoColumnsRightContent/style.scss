@@ -1,4 +1,4 @@
-
+@import "../../variables.scss";
 
 .col-left-right-content{
   background-image: url('../../imgs/Aboutme.png');
@@ -6,9 +6,11 @@
   background-repeat: no-repeat;
   background-position:center;
   background-size:cover;
-  height: 100vh;
+  // transform: scale(1.05);
+  height: 200vh;
   width: 0%;
   position: relative;
+  z-index: -1
   // padding: 0 !important;
   // margin: 0 !important;
 }
@@ -21,9 +23,9 @@
   justify-content: center;
   // align-items: center;
   gap: 10rem;
-  height: 100vh;
+  height: 200vh;
   width: 90vw;
-  background-color: #494848;
+  background-color: $primary-color;
   color: #fff;
   border-color: #494848;
   // padding: 0 !important;

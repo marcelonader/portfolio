@@ -1,10 +1,11 @@
+@import "../../variables.scss";
 // .technology > svg {
 //   width: 5rem;
 //   height: 5rem;
 // }
 
 .technology{
-  background-color: #494848;
+  background-color: $primary-color;
   margin: auto;
   gap: 1rem;
   // align-content: center;
@@ -18,8 +19,7 @@
 
 @media (min-width: 768px){
   .technology{
-    width: 70%;
-  
+    width: 60%;
     svg:hover{
       opacity: .5;
     }
@@ -27,6 +27,13 @@
     h1{
       
     }
+  }
+  
+}
+
+@media (min-width: 1440px){
+  .technology{
+    width: 40%;
   }
   
 }

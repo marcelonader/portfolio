@@ -1,4 +1,4 @@
-import "./style.css";
+import "./style.scss";
 
 function Section ({children, imageSection, styles, id}){ 
     return (

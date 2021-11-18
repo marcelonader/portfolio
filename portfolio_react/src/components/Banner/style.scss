@@ -1,10 +1,13 @@
+@import "../../variables.scss";
+
 .banner-section{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  // background-color: $secundary-color;
   transform: scale(1.05); 
-  height: 100vh;
+  height: 120vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -12,18 +15,30 @@
   align-items: center;
   position: relative;
   /* place-content: center; */
+  display: flex;
+  align-items: flex-end;
+
   
+}
+
+q{
+  width: 30rem;
+  text-align: end;
+  max-width: 90%;
+  font-size: 1.5rem;
+  text-shadow: .1rem .1rem .1rem white;
+  padding-right: 10%;
 }
 
 .banner-h1{
   /* font-family: 'Oswald', sans-serif; */
   font-family: 'Anton', sans-serif;
   position: absolute;
-  bottom: -.3rem;
+  bottom: -.1rem;
   font-size: 4rem;
   width: 100vw;
   text-align: center;
-  color: #494848;
+  color: $primary-color;
 }
 
 
@@ -36,6 +51,6 @@
     font-size: 8rem;
     width: 100vw;
     text-align: center;
-    color: #494848;
+    color: $primary-color;
   }
 }

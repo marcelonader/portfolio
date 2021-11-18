@@ -53,9 +53,19 @@
       border-bottom: 1px dashed rgba(256, 256, 256, .2);
       z-index: 9;
   }
+
+  .nav-link {
+    font-size: 1.3rem;
+  }
+
+  .navbar-brand {
+    font-size: 2rem !important;
+    padding-right: 2rem;
+  }
+  
 }
 
-@media (max-width: 991.98px) {   
+@media (max-width: 1400px) {   
   .navbar {
       padding: 15px;
       background: #3f3636 !important;
