@@ -1,79 +1,70 @@
 @import "../../variables.scss";
 
-  .section-left-content{
-    padding: 0 !important;
-    margin: 0 !important;
-    gap: 0;
-    // scrollbar-gutter: 0;
-  width: 100vw;
+.section-left-content {
+  padding: 0 !important;
+  margin: 0 !important;
+  gap: 0;
+  width: 100vw !important;
   background-color: #88E7DD;
   display: flex;
   justify-content: flex-start;
   position: relative;
   height: 100%;
-  }
 
-  .content-left{
-    // width: 100%;
-    // height: 100%;
+
+  .col-left-left-content{
+    padding: 3rem 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
-    // position: relative;
+    height: 450vh;
+    width: 90vw;
+    background-color: $primary-color;
+    color: #fff;
+    border-color: #494848;
+
+    .content-left{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
   }
-
-.col-right-left-content{
-  background-image: url('../../imgs/Projects.png');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size:cover;
-  // background-color: blue;
-  // transform: scale(1.05);
-  height: 450vh;
-  width: 0%;
-  position: relative;
-  // padding: 0 !important;
-  // margin: 0 !important;
-  
-}
-
-
-
-.col-left-left-content{
-  padding: 3rem 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  height: 450vh;
-  width: 90vw;
-  background-color: $primary-color;
-  color: #fff;
-  border-color: #494848;
-  // padding: 0 !important;
-  // margin: 0 !important;
-  // gap: 0;
-
-}
-
-
-@media(min-width: 600px){
 
   .col-right-left-content{
-    // display: none;
-    
-    width: 50vw;
-    // padding: 0 !important;
-    // margin: 0 !important;
-  }
-  .col-left-left-content{
-    // display: none;
-    width: 50vw;
-    // padding: 0 !important;
-    // margin: 0 !important;
+    background-image: url('../../imgs/Projects.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 450vh;
+    width: 0%;
+    position: relative;
   }
 
+  @media(max-width: 768px){
+    .col-left-left-content{
+      height: 330vh;
+
+    }
+  
+    .col-right-left-content{
+
+      height: 330vh;
+
+    }
+  }
+  
+  @media(min-width: 600px){
+
+    .col-right-left-content{
+      width: 50vw;
+    }
+    .col-left-left-content{
+      width: 50vw;
+    }
+  
+  }
 }
 

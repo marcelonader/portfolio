@@ -1,6 +1,5 @@
 import "./style.scss";
 
-
 const Header = ({children}) => (
   <header>
     {children}

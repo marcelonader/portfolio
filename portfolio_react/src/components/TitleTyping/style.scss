@@ -2,16 +2,15 @@
   color: #fff;
   font-size: clamp(1.30rem, 2vw, 2.5rem);
   text-shadow: 1px 1px 5px black;
-  /* position: absolute;
-  z-index: 1000; */
-}
 
+}
 
 .title-typing::after{
   content: "|";
   margin-left: .6rem;
   animation: barraPiscando .8s steps(15)infinite normal;
 }
+
 @keyframes barraPiscando {
   0%, 100% {
     opacity: 1;

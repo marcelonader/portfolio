@@ -1,7 +1,6 @@
 import "./style.scss";
 
-function SectionTwoColumnsRightContent ({styleContent, id, children, styles, stylesColLeftRight}){ 
-    return (
+const SectionTwoColumnsRightContent = ({styleContent, id, children, styles, stylesColLeftRight}) => ( 
       <section id={id} style={styles} className="row g-0 section-right-content">  
         <div style={stylesColLeftRight} className="col-md-6 g-0 col-left-right-content">
         </div>
@@ -9,7 +8,6 @@ function SectionTwoColumnsRightContent ({styleContent, id, children, styles, sty
             <div style={styleContent} className="content">{children}</div>
         </div>  
       </section>
-    )
-}
+)
 
 export default SectionTwoColumnsRightContent;

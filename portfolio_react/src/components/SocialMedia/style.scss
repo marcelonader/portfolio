@@ -1,0 +1,23 @@
+.social-media-div{
+  padding: 2rem;
+
+  h1{
+    font-size: 3rem;
+    color: #fff !important;
+  }
+
+  a, img {
+    display: inline-block;
+    width: 5rem;
+    height: 2rem;
+  }
+}
+
+@media(min-width: 768px){
+  .social-media-div{
+    a, img {
+      width: 10rem;
+      height: 3rem;
+    }
+  }
+}

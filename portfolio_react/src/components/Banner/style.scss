@@ -14,7 +14,6 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  /* place-content: center; */
   display: flex;
   align-items: flex-end;
 
@@ -31,7 +30,6 @@ q{
 }
 
 .banner-h1{
-  /* font-family: 'Oswald', sans-serif; */
   font-family: 'Anton', sans-serif;
   position: absolute;
   bottom: -.1rem;
@@ -44,7 +42,6 @@ q{
 
 @media(min-width: 1024px){
   .banner-h1{
-    /* font-family: 'Oswald', sans-serif; */
     font-family: 'Anton', sans-serif;
     position: absolute;
     bottom: -1rem;

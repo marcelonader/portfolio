@@ -1,4 +1,4 @@
-import './style.css';
+import './style.scss';
 
 const ParagrafoFooter = ({styles}) => {
   const generateDateString = () => {
@@ -8,7 +8,7 @@ const ParagrafoFooter = ({styles}) => {
   }
 
   return(
-      <p style={styles}>Todos os direitos reservados. &copy;Copyright {generateDateString()}</p>
+      <p style={styles}>&copy;Copyright {generateDateString()}</p>
   )
 }
 
