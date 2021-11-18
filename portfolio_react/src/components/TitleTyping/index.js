@@ -29,7 +29,7 @@ function limpar(done) {
     var char = div.innerHTML;
     var nr = char.length;
     var typer = setInterval(function() {
-        if (nr-- == 0) {
+        if (nr-- === 0) {
             clearInterval(typer);
             return done();
         }
