@@ -1,8 +1,8 @@
-import { Fragment } from "react";
+// import { Fragment } from "react";
 import "./style.scss";
 
 
-const TextAbout = ({dataAos, textContent, textTitle}) =>(
+const TextAbout = ({textContent, textTitle}) =>(
     <div data-aos="fade-left"
     data-aos-offset="300"
     data-aos-easing="ease-in-sine" className="textabout-div">  

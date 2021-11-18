@@ -1,7 +1,7 @@
 import "./style.scss"
 
-import anime from "animejs";
-import React,{useRef,useLayoutEffect} from "react";
+// import anime from "animejs";
+import React,{useRef} from "react";
  
 
 const Technology = ({children}) => {

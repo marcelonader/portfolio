@@ -4,8 +4,8 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import TitleTyping from './components/TitleTyping';
 import Banner from './components/Banner';
-import bannerBackground from './imgs/banner-background.png'
-import bannerBackground1 from './imgs/banner-background1.png'
+// import bannerBackground from './imgs/banner-background.png'
+// import bannerBackground1 from './imgs/banner-background1.png'
 import bannerBackground3 from './imgs/banner-background3.png'
 import Section from './components/Section';
 import SectionTwoColumnsRightContent from './components/SectionTwoColumnsRightContent';
@@ -27,7 +27,7 @@ import TextAbout from './components/TextAbout';
 import imgPerfilPretoEBranco from "./imgs/perfil1_edited_edited_edited.png"
 import Paragrafo from "./components/Paragrafo";
 import ParagrafoFooter from "./components/ParagrafoFooter"
-import ImgSection from "./components/ImgSection"
+// import ImgSection from "./components/ImgSection"
 import { projects } from './data/projects';
 import { aboutMe } from './data/about-me';
 
