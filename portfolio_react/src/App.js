@@ -4,7 +4,6 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import TitleTyping from './components/TitleTyping';
 import Banner from './components/Banner';
-import bannerBackground3 from './imgs/banner-background3.png'
 import Section from './components/Section';
 import SectionTwoColumnsRightContent from './components/SectionTwoColumnsRightContent';
 import SectionTwoColumnsLeftContent from './components/SectionTwoColumnsLeftContent';
