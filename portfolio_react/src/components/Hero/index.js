@@ -4,7 +4,7 @@ const Hero = ({children, img}) => (
   <>
     <div className="hero">
         <div className="container-fluid">
-            <div className="row">
+            <div className="row row-hero">
                 <div className="col-sm-12 col-md-6">
                     <div className="hero-content">
                         <div className="hero-text">

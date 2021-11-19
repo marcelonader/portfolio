@@ -2,7 +2,8 @@
   color: #fff;
   font-size: clamp(1.30rem, 2vw, 2.5rem);
   text-shadow: 1px 1px 5px black;
-
+  width: 100%;
+  margin: 0 !important;
 }
 
 .title-typing::after{

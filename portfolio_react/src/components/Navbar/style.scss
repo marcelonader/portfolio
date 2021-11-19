@@ -1,8 +1,10 @@
+@import "../../utilities.scss";
 
 .navbar {
   position: relative;
   transition: .5s;
   z-index: 999;
+  width: 100%;
 }
 
 .navbar-brand, .nav-item{
@@ -39,10 +41,15 @@
 }
 
 @media (max-width: 1400px) {   
+
   .navbar {
       padding: 15px;
       background: #3f3636 !important;
   }
-
+  .navbar-nav{
+    font-size: 1rem;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
 }
   

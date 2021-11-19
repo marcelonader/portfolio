@@ -1,0 +1,26 @@
+$primary-color: #1C1C1C;
+$secundary-color: #494848;
+
+
+@mixin parallax($bgImg) {
+  background-image: url($bgImg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
+}
+
+@mixin text($color, $fontSize, $align, $width){
+  font-size: $fontSize;
+  width: $width;
+  text-align: $align;
+  color: $color;
+}
+
+@mixin bg-glass{
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 1rem;
+}

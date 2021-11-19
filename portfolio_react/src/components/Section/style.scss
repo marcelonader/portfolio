@@ -1,4 +1,4 @@
-@import "../../variables.scss";
+@import "../../utilities.scss";
 
 .section{
   display: flex;
@@ -8,8 +8,6 @@
   position: relative;
   background-color: $primary-color;
   width: 100vw;
-  overflow-x: hidden;
-  max-width: 100vw; 
 }
 
 @media (min-width: 768px){

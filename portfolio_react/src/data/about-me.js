@@ -9,7 +9,7 @@ export const aboutMe = [
   },
   {
     title:  "I am a ...", 
-    content: "Musician in his spare time. Financial Market Enthusiast. Podcasts and eletronic games lover. Passionate about learning and working as a team."
+    content: "Amateur musician and cook in his spare time. Financial Market Enthusiast. Podcasts and eletronic games lover. Passionate about learning and working as a team."
   },
   {
     title:  "I love to ask logical challenges.", 

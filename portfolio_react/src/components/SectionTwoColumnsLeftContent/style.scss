@@ -1,14 +1,14 @@
-@import "../../variables.scss";
+@import "../../utilities.scss";
 
 .section-left-content {
   padding: 0 !important;
   margin: 0 !important;
   gap: 0;
   width: 100vw !important;
-  background-color: #88E7DD;
   display: flex;
   justify-content: flex-start;
   position: relative;
+  // z-index: -1;
   height: 100%;
 
   .col-left-left-content{
@@ -32,16 +32,14 @@
   }
 
   .col-right-left-content{
-    background-image: url('../../imgs/Projects.png');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover;
-
+    @include parallax('imgs/Projects.png');
+    background-color: #88E7DD;
+    // transform: scale(1.03) translateX(-2%);
+    border-top: 2px solid #fff;
     height: 450vh;
     width: 0%;
     position: relative;
-    
+    z-index: -1;
   }
 
   @media(max-width: 768px){
@@ -51,17 +49,20 @@
     }
   
     .col-right-left-content{
-
       height: 330vh;
 
     }
   }
   
   @media(min-width: 600px){
-
+    .section-left-content {
+      width: 100vw;
+    }
     .col-right-left-content{
       width: 50vw;
-      transform: scale(1.02);
+      position: relative;
+      z-index: -1;
+      transform: scale(1.03);
     }
     .col-left-left-content{
       width: 50vw;

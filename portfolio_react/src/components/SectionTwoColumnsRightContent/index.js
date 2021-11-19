@@ -5,7 +5,7 @@ const SectionTwoColumnsRightContent = ({styleContent, id, children, styles, styl
         <div style={stylesColLeftRight} className="col-md-6 g-0 col-left-right-content">
         </div>
         <div className="col-sm-10 col-md-6 g-0 col-right-right-content">
-            <div style={styleContent} className="content">{children}</div>
+            <div style={styleContent} className="content-right">{children}</div>
         </div>  
       </section>
 )

@@ -1,42 +1,46 @@
-@import "../../variables.scss";
+@import "../../utilities.scss";
 
 .banner-section{
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  // background-color: $secundary-color;
-  transform: scale(1.05); 
+  background-color: #88E7DD;
+  @include parallax("imgs/banner-background3.png");
   height: 120vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   position: relative;
-  display: flex;
   align-items: flex-end;
-
-  
-}
-
-q{
-  width: 30rem;
-  text-align: end;
-  max-width: 90%;
-  font-size: 1.5rem;
-  text-shadow: .1rem .1rem .1rem white;
-  padding-right: 10%;
+  transform: scale(1.05);
 }
 
 .banner-h1{
   font-family: 'Anton', sans-serif;
   position: absolute;
-  bottom: -.1rem;
-  font-size: 4rem;
-  width: 100vw;
-  text-align: center;
-  color: $primary-color;
+  bottom: -.07rem;
+  @include text($primary-color, 4rem, center, 100vw)
+}
+@media (min-width: 768px) {
+  .banner-h1{
+    bottom: -.1rem;
+    @include text($primary-color, 7rem, center, 100vw)
+  }
+  q{
+    max-width: 90%;
+    text-shadow: .1rem .1rem .1rem white;
+    padding-right: 5%;
+    @include text($primary-color, 2rem, end, 50rem)
+  }
+}
+@media (max-width: 767px) {
+  q{
+    max-width: 90%;
+    text-shadow: .1rem .1rem .1rem white;
+    margin: auto;
+    padding: 0 2rem;
+    @include text($primary-color, 1rem, center, 25rem)
+
+    
+  }
 }
 
 
@@ -44,10 +48,16 @@ q{
   .banner-h1{
     font-family: 'Anton', sans-serif;
     position: absolute;
+    bottom: -.01rem;
+    @include text($primary-color, 7rem, center, 100vw)
+  }
+}
+
+@media(min-width: 1300px){
+  .banner-h1{
+    font-family: 'Anton', sans-serif;
+    position: absolute;
     bottom: -1rem;
-    font-size: 8rem;
-    width: 100vw;
-    text-align: center;
-    color: $primary-color;
+    @include text($primary-color, 9rem, center, 100vw)
   }
 }

@@ -24,11 +24,7 @@ const App = () => (
     <Header>
       <Navbar/>
     </Header> 
-    <Banner 
-        id='home' 
-        imageBanner={`url(${bannerBackground3})`}
-        >
-    </Banner>
+    <Banner />
     <Hero 
       img={imgPerfilPretoEBranco}>
         <TitleTyping 
@@ -45,7 +41,7 @@ const App = () => (
     </Section>
 
     <SectionTwoColumnsLeftContent 
-      classes="row" id="projects">
+      id="projects">
       {projects.map(({img, title, link}, i) => <Card key={i} classes="col-6" img={img} title={title} link={link}/>)}
     </SectionTwoColumnsLeftContent>
     <Footer 
@@ -53,16 +49,17 @@ const App = () => (
       styles={{
         transform: 'scale(1.1)', 
         height: '80vh', 
-        'max-width': '100vw'
+        'width': '90.95vw'
         }} 
     >
       <SocialMedia/>
-      <Paragrafo 
+
+      <Paragrafo
         styles={{
           color: '#fff', 
           'font-size': 'clamp(1rem, 1vw, 2rem)', 'text-align': 'center', 
           'text-shadow': '1px 1px 2px black'
-        }} 
+        }}
         content={"Developed by Marcelo Massayuki Nader."}
       />
       <ParagrafoFooter 
